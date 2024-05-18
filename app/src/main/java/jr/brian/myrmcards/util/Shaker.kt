@@ -49,8 +49,8 @@ data class ShakeConfig(
         fun verticalConfig() = ShakeConfig(
             iterations = 4,
             intensity = 2_000f,
-            rotateX = -20f,
-            translateY = 20f,
+            rotateX = -15f,
+            translateY = 40f,
         )
     }
 }
