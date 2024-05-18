@@ -1,4 +1,4 @@
-package jr.brian.myrmcards.view.composables
+package jr.brian.myrmcards.util
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.spring
