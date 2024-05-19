@@ -26,11 +26,13 @@ data class Character(
     companion object {
         private const val DEFAULT_EMPTY_VALUE = "N/A"
 
+        private const val DEFAULT_CREATION_DATE = "2017-11-04T10:00:00.301Z"
+
         private const val DEFAULT_IMAGE_URL =
             "https://rickandmortyapi.com/api/character/avatar/19.jpeg"
 
         val EMPTY = Character(
-            created = DEFAULT_EMPTY_VALUE,
+            created = DEFAULT_CREATION_DATE,
             episode = listOf(),
             gender = DEFAULT_EMPTY_VALUE,
             id = -1,
