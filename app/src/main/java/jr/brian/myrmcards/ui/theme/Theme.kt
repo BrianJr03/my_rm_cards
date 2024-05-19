@@ -1,6 +1,5 @@
 package jr.brian.myrmcards.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -9,14 +8,7 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-
-val customPink = Color.hsl(hue=340f, saturation = 1f, lightness = 0.625f)
-val customYellow = Color.hsl(hue = 70f, saturation = 1f, lightness = 0.89f)
-val customGreen = Color.hsl(hue = 160f, saturation = 1f, lightness = 0.75f)
-val customBlue = Color.hsl(hue = 200f, saturation = .64f, lightness = .50f)
-val customRed = Color.hsl(hue = 2f, saturation = .64f, lightness = .50f)
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
