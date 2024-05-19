@@ -19,6 +19,10 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+//        fetchDataInBackground(this,
+//            onStateChange = {
+//            }
+//        )
         setContent {
             MyRMCardsTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
