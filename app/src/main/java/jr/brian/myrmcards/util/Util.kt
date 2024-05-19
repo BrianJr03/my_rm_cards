@@ -10,11 +10,11 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withStyle
-import jr.brian.myrmcards.ui.theme.customBlue
-import jr.brian.myrmcards.ui.theme.customGreen
-import jr.brian.myrmcards.ui.theme.customPink
-import jr.brian.myrmcards.ui.theme.customRed
-import jr.brian.myrmcards.ui.theme.customYellow
+import jr.brian.myrmcards.ui.theme.CustomBlue
+import jr.brian.myrmcards.ui.theme.CustomGreen
+import jr.brian.myrmcards.ui.theme.CustomPink
+import jr.brian.myrmcards.ui.theme.CustomRed
+import jr.brian.myrmcards.ui.theme.CustomYellow
 import java.text.SimpleDateFormat
 import java.util.Locale
 
@@ -24,9 +24,9 @@ private val outputFormat = SimpleDateFormat("MM/dd/yyyy", Locale.US)
 @Composable
 fun getCharacterScreenColors(): Pair<Color, Color> {
     return if (isSystemInDarkTheme())
-        Pair(customGreen, customYellow)
+        Pair(CustomGreen, CustomYellow)
     else
-        Pair(customBlue, customRed)
+        Pair(CustomBlue, CustomRed)
 }
 
 fun String.formatDate(): String {
@@ -64,7 +64,7 @@ fun Context.showLongToast(msg: String) {
 fun annotatedString(
     coloredText: String,
     regularText: String,
-    coloredTextColor: Color = customPink,
+    coloredTextColor: Color = CustomPink,
     regularTextColor: Color = MaterialTheme.colorScheme.onSurface
 ): AnnotatedString {
     return buildAnnotatedString {
